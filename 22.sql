@@ -1,0 +1,1 @@
+SELECT Employee.FirstName, Employee.LastName, COUNT(Customer.CustomerId) FROM Customer JOIN Employee ON Employee.EmployeeId == Customer.SupportRepId WHERE Employee.ReportsTo == 2 GROUP BY Employee.EmployeeId
